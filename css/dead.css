@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+
+main, .back{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+main{
+    background: #141414;
+    padding: 16px;
+    
+}
+
+.top{
+    height: 10vh;
+    width: 100%;
+    background-color: #1A1A1A;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.top .logo{
+    display: flex;
+    align-items: center;
+}
+
+.top .search{
+    width: 50%;
+}
+
+
+.top .loggeduser{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    gap: 20px;
+    padding: 10px;
+}
+.top .loggeduser .userdetails{
+    text-align: end;
+}
+.top .loggeduser .userdetails span{
+    font-size: 10px;
+}
+.top .loggeduser .userdetails p{
+    font-size: 12px;
+    text-align: right;
+}
+.top .loggeduser .useravator{
+    width: 64px;
+    height: 64px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    gap: 10px;
+}
+
+.bottom .sidenav{
+    width: 20%;
+    background-color: #1A1A1A;
+    height: 100%;
+    border-radius: 16px;
+    padding: 15px 10px;
+}
+
+.bottom .sidenav .links{
+    padding: 10px;
+}
+.bottom .sidenav .links a{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #1F1F1F;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.bottom .sidenav .op{
+    margin-top: 64px;
+}
+
+.bottom .content{
+    width: 80%;
+    height: 100%;
+    border-radius: 16px;
+}
+.bottom .content .upper{
+    height: fit-content;
+    width: 100%;
+    background-color: #1A1A1A;
+    border-radius: 16px;
+    padding: 10px;
+}
+.bottom .content .lower{
+    height: fit-content;
+    width: 100%;
+    background-color: #1A1A1A;
+    border-radius: 16px;
+    padding: 10px;
+}
+.bottom .content .upper,.lower{
+    margin-bottom: 10px;
+}
+
+.bottom .content .upper .cardframe,.equipmentframe{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bottom .content .upper .cardframe .card{
+    width: 19%;
+    background-color: #1F1F1F;
+    height: 100%;
+    border-radius: 16px;
+    
+}
+
+.bottom .content .upper .cardframe .card{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.bottom .content .upper .cardframe .card .icon .iconpart{
+    background-color: #FEF612;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom .content .upper .cardframe .card .icon .iconpart img{
+    filter: invert(100%);
+}
+
+.equipcard{
+    height: fit-content;
+    width: 20%;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+}
+.seemore{
+    width: 10%;
+    
+}
+.seemore a{
+    background-color: #FEF612;
+    padding: 10px;
+    height: 250px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seemore a img{
+    filter: invert(100%);
+}
+.equipcard .count{
+    position: absolute;
+}
+.equipcard .count h4{
+    font-size: 3rem;
+    font-weight: 400;
+    margin:10px;
+}
+
+.equipcard .equipname{
+    padding: 10px;
+    padding-bottom: 15px;
+}
+.equipcard .equipname p{
+    color: gray;
+}
+.equipcard .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.equipcard img{
+    /* height: 300px; */
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 20px;
+}

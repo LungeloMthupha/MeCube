@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+:root {
+    --dt-row-selected: 40,40,40;
+    --dt-row-selected-text: 255, 255, 255;
+    --dt-row-selected-link: 9, 10, 11;
+}
+
+
+* {
+  padding: 0%;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+main,
+.back {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  background: #141414;
+  padding: 16px;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.top {
+  height: 7vh;
+  width: 100%;
+  background-color: #1a1a1a;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.top .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.top .logo h1{
+    font-size: 16px;
+}
+.top .logo img{
+    width: 24px;
+}
+
+.top .search {
+  width: 50%;
+}
+
+.top .loggeduser {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  padding: 10px;
+}
+.top .loggeduser .userdetails {
+  text-align: end;
+}
+.top .loggeduser .userdetails span {
+    font-size: 10px;
+    color: gray;
+  }
+  
+  .top .loggeduser .userdetails p {
+    font-size: 12px;
+    text-align: right;
+  }
+  .top .loggeduser .useravator {
+    width: 48px;
+    height: 48px;
+    background-color: black;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: #fdfa0b;
+    padding: 2px;
+  }
+  
+  .top .loggeduser .useravator img{
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.bottom {
+  display: flex;
+  align-items: center;
+  height: 88vh;
+  width: 100%;
+  gap: 10px;
+}
+
+.bottom .sidenav {
+  width: 17%;
+  background-color: #1a1a1a;
+  height: 100%;
+  border-radius: 16px;
+  padding: 15px 10px;
+}
+
+.bottom .sidenav h3{
+    font-size: 14px;
+    padding-left: 10px;
+    display: none;
+}
+
+.bottom .sidenav .links {
+  padding: 10px;
+}
+.bottom .sidenav .links a {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #1f1f1f;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+.bottom .sidenav .links .init::after{
+    content:"";
+    width: 64px;
+    height: 4px;
+    background-color: #fdfa0b;
+    position: relative;
+    right: 0px;
+    border-radius: 10px;
+  }
+
+.bottom .sidenav .logout{
+    margin-top: 300px;
+}
+.bottom .content {
+    width: 83%;
+    height: 100%;
+    border-radius: 16px;
+    /* display: flex; */
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+  }
+
+.bottom .content .displayData{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 550px;
+  padding: 10px;
+}
+.bottom .content .displayData .dt-button {
+    padding: 5px 10px;
+    background-color: #fdfa0b;
+    border-style: solid;
+    border-color: #fdfa0b;
+    border-radius: 5px;
+}
+
+.bottom .content p{
+    font-size: 12px;
+    margin-bottom: 20px;
+    color:gray;
+}
+.bottom .content h2 {
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar{
+  width: 5px;;
+}
+::-webkit-scrollbar-track{
+  background-color: #1a1a1a;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(64, 64, 64);
+  border-radius: 10px;
+}

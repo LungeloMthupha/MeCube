@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+  padding: 0%;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  overflow: hidden;
+  background: #141414;
+}
+
+
+main,
+.back {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  background: #141414;
+  padding: 16px;
+  color: white;
+}
+
+.top {
+  height: 7vh;
+  width: 100%;
+  background-color: #1a1a1a;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.top .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.top .logo h1{
+    font-size: 16px;
+}
+.top .logo img{
+    width: 24px;
+}
+
+.top .search {
+  width: 50%;
+}
+
+.top .loggeduser {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  padding: 10px;
+}
+.top .loggeduser .userdetails span {
+  font-size: 10px;
+  color: gray;
+}
+
+.top .loggeduser .userdetails p {
+  font-size: 12px;
+  text-align: right;
+}
+.top .loggeduser .useravator {
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #fdfa0b;
+  padding: 2px;
+}
+
+.top .loggeduser .useravator img{
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  height: 88vh;
+  width: 100%;
+  gap: 10px;
+}
+
+.bottom .sidenav {
+  width: 17%;
+  background-color: #1a1a1a;
+  height: 100%;
+  border-radius: 16px;
+  padding: 15px 10px;
+}
+
+.bottom .sidenav h3{
+    font-size: 14px;
+    padding-left: 10px;
+    display: none;
+}
+
+.bottom .sidenav .links {
+  padding: 10px;
+}
+.bottom .sidenav .links a {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #1f1f1f;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+
+.bottom .sidenav .links .init::after{
+  content:"";
+  width: 64px;
+  height: 4px;
+  background-color: #fdfa0b;
+  position: relative;
+  right: 0px;
+  border-radius: 10px;
+}
+
+
+
+.bottom .sidenav .logout{
+    margin-top: 240px;
+}
+.bottom .content {
+  width: 83%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+.bottom .content .top-half,.down-half {
+  height: 100%;
+  width: 50%;
+  padding: 0px 0px;
+  padding-right: 10px;
+  border-radius: 16px;
+  
+  /* display: flex;
+  align-items: center;
+  gap: 10px; */
+}
+
+.bottom .content .top-half .graph{
+  width: 100%;
+  height: 50%;
+  
+  padding: 20px;
+  
+}
+
+.bottom .content .down-half .graph{
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 16px;
+}
+.bottom .content .down-half .graph p{
+  font-size: 12px;
+  color: gray;
+  margin: 10px 0px;
+}
+
+.bottom .content .down-half .graph .new-list .seeall{
+  margin-top: 10px;
+}
+
+.bottom .content .down-half .graph .new-list a{
+  color: #fdfa0b;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+ .content .down-half .graph .gr1{
+  border-radius: 5px 5px 5px 16px;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  font-size: 12px;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  width: 100%;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+table tbody tr td{
+  align-items: center;
+  padding: 9px;
+  font-size: 12px;
+  color: gray;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* font-size: 0.9rem; */
+}
+
+.right thead tr,th {
+  /* background-color: #121212; */
+  color: black;
+  text-align: left;
+  border-bottom-style: solid;
+  /* border-bottom-color: gray; */
+  position: sticky;
+}
+
+table thead tr th{
+  color: white;
+  padding: 5px;
+}
+
+
+table tbody tr {
+  padding: 9px;
+}
+
+.crudeframe .right tbody tr {
+  border-bottom: 1px solid rgb(64, 64, 64);
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: rgb(36, 36, 36);
+}
+
+.crudeframe .right tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(26, 26, 26);
+}
+.tabledata {
+  margin: 5px 0px;
+  height: auto;
+  border-bottom-style: solid;
+  border-bottom-color: #fdfa0b;
+}
+
+tr td .action {
+  display: flex;
+  align-items: center;
+}
+tr td .action img {
+  width: 16px;
+}
+
+.edit {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  /* background-color: white; */
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  /* border-right: 1px solid #f8f8f8; */
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: black;
+  background: #fef612;
+}
+
+/* .fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960; */
+
+/* .fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+} */
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .fl-table {
+    display: block;
+    width: 100%;
+  }
+  .table-wrapper:before {
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  .fl-table thead,
+  .fl-table tbody,
+  .fl-table thead th {
+    display: block;
+  }
+  .fl-table thead th:last-child {
+    border-bottom: none;
+  }
+  .fl-table thead {
+    float: left;
+  }
+  .fl-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .fl-table td,
+  .fl-table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+    display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .fl-table tr:nth-child(even) {
+    background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+  .fl-table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+  .fl-table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
+
+.add {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.07);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  height: 100vh;
+  width: 30vw;
+  padding: 50px;
+  /* display: none; */
+}
+
+.add form input {
+  width: 100%;
+  padding: 5px;
+  color: black;
+  outline: none;
+}
+
+.add form .field {
+  margin: 10px 0px;
+}
+
+.add form .field p {
+  font-size: 10px;
+}
+
+.add .close button {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border-style: none;
+}
+.add .close {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.add form .field button {
+  background-color: #fef612;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+span button {
+  color: #fef612;
+  border-style: dotted;
+  border-color: #fef612;
+  padding: 10px;
+  background-color: transparent;
+}
+
+fl-table table tbody {
+  height: 30vh;
+  overflow-y: auto;
+}

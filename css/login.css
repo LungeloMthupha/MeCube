@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #141414;
+    color: white;
+    
+}
+
+main .half{
+    width: 50vw;
+    height: 100vh;
+}
+
+main .backdrop{
+    background-image: url('../img/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .login_part .loginform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+main .login_part .loginform .loginFrame{
+    width: 30vw;
+}
+
+main .login_part .loginform .loginFrame .social h1{
+    font-size: 2.5rem;
+}
+
+main .login_part .loginform .loginFrame .social p{
+    font-size: 0.8rem;
+    color: gray;
+}
+.spacer{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.user_login form section input{
+    width: 100%;
+    padding: 7px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    outline: none;
+    margin: 10px 0px;
+    color: white;
+    font-size: 14px;
+}
+
+.user_login form section button{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.user_login form section a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 0.8rem;
+}
+.user_login form section p{
+    font-size: 0.8rem;
+}
+
+.social_link button{
+    width: 100%;
+    padding: 7px;
+    margin: 20px 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(215, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+.social_link button img{
+    width: 24px;
+}
+.social_link a{
+    text-decoration: none;
+}
+
+.user_login form section .login-btn{
+    background-color: white;
+    color: black;
+}
+
+main .login_part .logo a{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 100px;
+    color: white;
+    text-decoration: none;
+}
+main .login_part .logo img{
+    width: 32px;
+}
+
+.liner3{
+    position: absolute;
+    bottom: 15vh;
+    right: 10vw;
+}
+
+.liner3 img{
+    width: 300px;
+}
